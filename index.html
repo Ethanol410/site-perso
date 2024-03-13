@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style/components.css">
+    <link rel="stylesheet" href="./style/layout.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Red+Hat+Display&display=swap"
+        rel="stylesheet">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./style/assets/ui/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./style/assets/ui/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./style/assets/ui/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./style/assets/ui/favicon/site.webmanifest">
+        <link rel="mask-icon" href="./style/assets/ui/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="light">
+    <!-- Modal -->
+    <div class="modal_projet">
+        <div class="contain_modal">
+            <div class="arrow_back">
+                <img src="./style/assets/ui/Right Arrow.png" alt="" width="50px" height="50px">
+            </div>
+            <div class="titre_modal">
+                <h1></h1>
+                <h3></h3>
+                <p></p>
+            </div>
+            <div class="link_modal">
+                <h3>Lien</h3>
+                <a class="transition-underline" href="#">GitHub</a>
+            </div>
+            <div class="img_modal">
+            </div>
+            <div class="container_modal">
+                <div class="objectif_modal">
+                    <h2>Objectif</h2>
+                    <p></p>
+                </div>
+                <div class="role_modal">
+                    <h2>Role</h2>
+                    <p></p>
+                </div>
+                <div class="missions_modal">
+                    <h2>Missions</h2>
+                    <p></p>
+                </div>
+                <div class="skills_modal">
+                    <h2>Compétences</h2>
+                    <p></p>
+                </div>
+                <div class="outils_modal">
+                    <h2>Outils</h2>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scroll to top -->
+
+    <div onclick="scrollToTop()" class="scrollTop">Top</div>
+
+    <!-- ----- -->
+
+    <!-- <div class="circle"></div> -->
+
+
+    <!-- Header  -->
+    <header>
+        <nav class="navbar">
+            <a class="logo transition-underline" href="#accueil">PORTFOLIO</a>
+            <a href="#accueil"><img src="./style/assets/ui/FINAL OEIL - Copie.png" alt="Logo COLLIN Ethan" width="120px"
+                    height="120px">
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a class="transition-underline" href="#projet">Projets</a></li>
+                    <li><a class="transition-underline" href="#apropos">A propos</a></li>
+                    <li><a class="transition-underline" href="#passion">Passions</a></li>
+                    <li><a class="transition-underline" href="#contact">Contact</a></li>
+                    <div class="toggle_switch">
+                        <label class="switch_label">
+                            <input type="checkbox" class="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- --------------- -->
+    <main>
+        <!-- Section accueil -->
+        <section class="section-accueil " id="accueil">
+            <div class="section_accueil_container">
+                <div class="photo-accueil"><img src="./media/images/photo_acceuil.jpg" alt="Photo de moi à la plage"
+                        width="500" height="700"></div>
+                <div class="bio-accueil">
+                    <p>A la recherche d'une alternance</p>
+                    <h2>France, Lannion</h2>
+                    <h1>COLLIN Ethan</h1>
+                </div>
+            </div>
+        </section>
+        <!-- --------------------- -->
+
+        <!-- Section projet -->
+        <section class="section-projet" id="projet">
+            <h1 class="section_titre">1- Projets</h1>
+
+            <div class="preview">
+                <div class="preview-img"></div>
+            </div>
+
+            <div class="container">
+                <div class="projects">
+
+                    <div class="project" id="p1">
+                        <div class="client">
+                            <p class="text_project_1">Boutique en Ligne</p>
+                        </div>
+                        <div class="location">
+                            <p class="text_project">Marketing</p>
+                        </div>
+                        <div class="service">
+                            <p class="text_project">Personnel</p>
+                        </div>
+                        <div class="year">
+                            <img src="./style/assets/ui/Right Arrow.png" alt="" width="50px" height="50px">
+                        </div>
+                    </div>
+                    <div class="project" id="p2">
+                        <div class="client">
+                            <p class="text_project_1">Fabrik Ta Pepite</p>
+                        </div>
+                        <div class="location">
+                            <p class="text_project">Entreprenariat</p>
+                        </div>
+                        <div class="service">
+                            <p class="text_project">Personnel</p>
+                        </div>
+                        <div class="year">
+                            <img src="./style/assets/ui/Right Arrow.png" alt="" width="50px" height="50px">
+                        </div>
+                    </div>
+                    <div class="project" id="p3">
+                        <div class="client">
+                            <p class="text_project_1">Application Web</p>
+                        </div>
+                        <div class="location">
+                            <p class="text_project">Développement Web</p>
+                        </div>
+                        <div class="service">
+                            <p class="text_project">Universitaire</p>
+                        </div>
+                        <div class="year">
+                            <img src="./style/assets/ui/Right Arrow.png" alt="" width="50px" height="50px">
+                        </div>
+                    </div>
+                    <div class="project" id="p4">
+                        <div class="client">
+                            <p class="text_project_1">Portfolio</p>
+                        </div>
+                        <div class="location">
+                            <p class="text_project">Développement Web</p>
+                        </div>
+                        <div class="service">
+                            <p class="text_project">Universitaire</p>
+                        </div>
+                        <div class="year">
+                            <img src="./style/assets/ui/Right Arrow.png" alt="" width="50px" height="50px">
+                        </div>
+                    </div>
+                    <div class="project" id="p5">
+                        <div class="client">
+                            <p class="text_project_1">Site vitrine</p>
+                        </div>
+                        <div class="location">
+                            <p class="text_project">Développement Web</p>
+                        </div>
+                        <div class="service">
+                            <p class="text_project">Universitaire</p>
+                        </div>
+                        <div class="year">
+                            <img src="./style/assets/ui/Right Arrow.png" alt="" width="50px" height="50px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- ------------------- -->
+
+        <!-- Section A propos -->
+
+        <section class="section-apropos" id="apropos">
+            <h1 class="section_titre">2- A propos</h1>
+            <div class="section-apropos_container">
+                <div class="section-apropos_img"><img src="./media/images/photo_apropos.jpg"
+                        alt="Photo de moi devant un mirroir" width="500" height="700"></div>
+
+                <div class="section-apropos_info">
+                    <div class="section-apropos_txt">
+                        <p>Je suis étudiant en BUT MMI à l'IUT de Lannion, où je me plonge avec passion dans les métiers
+                            du multimédia et de l'internet. À la recherche d'une alternance dans le développement web,
+                            je suis constamment inspiré par les défis que ce domaine en perpétuelle évolution propose.
+                            Ma soif de connaissances et ma curiosité insatiable alimentent ma volonté de m'améliorer
+                            continuellement.</p>
+                        <p>Doté d'une solide compréhension des langages de programmation tels que HTML, CSS, et
+                            JavaScript, ainsi que d'une expérience pratique dans la création de sites web, je suis prêt
+                            à relever de nouveaux défis et à contribuer à des projets innovants. Mes intérêts variés, de
+                            la mode au sport en passant par le design et la lecture, enrichissent ma perspective et
+                            nourrissent ma créativité dans le développement web.</p>
+                        <p>Si vous recherchez un alternant passionné, motivé et désireux d'apprendre, n'hésitez pas à me
+                            contacter pour discuter de la manière dont je pourrais contribuer à votre équipe. Ensemble,
+                            nous pouvons construire quelque chose d'exceptionnel.</p>
+                    </div>
+
+                    <div class="section-apropos_links">
+                        <a href="./media/CV_COLLIN-ETHAN_2023 (10).pdf" target="_blank">Cv</a>
+                        <a href="https://www.linkedin.com/in/ethan-collin-708bab279/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/Ethanol410" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------- -->
+
+        <!-------- Section passion ----------->
+
+        <section class="section-passion" id="passion">
+            <h1 class="section_titre">3- Passions</h1>
+
+            <div class="section-passion_container">
+                <div class="section-passion_content">
+                    <video src="./media/video/video_passions.mp4" autoplay loop muted width="500" height="500"></video>
+                    <p>Passionné par la calisthénie depuis quatre mois, ce sport m'enthousiasme par ses innombrables
+                        possibilités. La calisthénie demande une concentration intense et représente un défi exigeant,
+                        nécessitant un investissement en temps et en effort considérable. Par exemple, l'atteinte d'une
+                        figure peut prendre jusqu'à deux ans de pratique quotidienne assidue. Cette discipline et ses
+                        variantes me captivent, et j'apprécie le dévouement nécessaire pour maîtriser cet art.</p>
+                </div>
+                <div class="section-passion_content">
+                    <p>En septembre 2023, j'ai lancé ma propre boutique en ligne de vêtements exclusifs sur Instagram,
+                        concrétisant ainsi ma passion de longue date pour la mode. Forte de mon intérêt pour les
+                        vêtements et l'industrie de la mode, j'ai pris la décision de créer ma propre boutique en ligne.
+                        Si vous êtes intéressé(e) à découvrir ma sélection unique de vêtements, n'hésitez pas à faire un
+                        tour via ce lien -> <a class="transition-underline insta" href="https://www.instagram.com/toutoune_shop/">@Toutoune_shop</a>. Vous y trouverez des pièces soigneusement sélectionnées
+                        qui reflètent mon engagement envers la qualité et le style. J'espère vous y retrouver bientôt !
+                        
+                    </p>
+                    <img src="./media/images/photo_passions2.jpg" width="500" height="500" alt="Photo de chaussures">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------- -->
+
+
+        <!----- Section contact --------------->
+        <section class="section-contact" id="contact">
+            <h1 class="section_titre">4- Contact</h1>
+            <div class="section-contact-container">
+                <div class="section-contact-mail">
+                    <h1>Vous avez un projet ?
+                        Je serais ravi d’en discuter
+                        avec vous.</h1>
+                    <a class="transition-underline"
+                        href="mailto:ethan.collin2304@gmail.com">ethan.collin2304@gmail.com</a>
+                </div>
+                <div class="section-contact-links">
+                    <a class="transition-underline" href="./media/CV_COLLIN-ETHAN_2023 (10).pdf" target="_blank">Cv</a>
+                    <a class="transition-underline" href="">LinkedIn</a>
+                    <a class="transition-underline" href="">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------- -->
+
+    </main>
+
+    <!-- Footer  -->
+    <footer>
+        <p>All Rights Deserved / COLLIN Ethan / 2024</p>
+    </footer>
+    <!-- ---------- -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

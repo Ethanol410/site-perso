@@ -1,0 +1,527 @@
+/* Global layouting */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* body */
+
+
+
+/* progress wrap */
+
+
+
+/* ----- */
+
+
+/* header  */
+
+
+header {
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 80px;
+}
+
+
+/* Nav bar  */
+
+.navbar {
+
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar .nav-links ul li {
+    margin: 0 30px;
+}
+
+
+
+.toggle_switch {
+    position: relative;
+  }
+
+
+  .switch_label {
+    position: absolute;
+    
+  }
+
+  .checkbox {
+    position: absolute;
+    display: none;
+  }
+
+  .slider {
+    position: absolute;
+  }
+
+  .slider::before {
+    position: absolute;
+   
+  }
+
+
+
+
+
+
+/* Section accueil */
+
+.section-accueil {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.section_accueil_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-end;
+}
+
+@media (max-width: 900px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* ------------------- */
+
+/* modal */
+
+.modal_projet{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    display: none;
+    
+}
+
+.contain_modal{
+    width: 100%;
+    height: 100vh;
+}
+
+.arrow_back{
+    display: flex;
+    position: relative;
+    padding: 30px;
+}
+
+.arrow_back img:hover {
+    transform: rotateZ(-90deg);    
+}
+
+.arrow_back img {
+transition: transform 0.7s;
+}
+
+
+.titre_modal{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: start;
+width: 80%;
+margin: 0 auto;
+gap: 5px;
+}
+
+.titre_modal > p {
+    font-size: 1.2rem;
+}
+
+.link_modal{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 80%;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+
+
+.img_modal{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    margin-bottom: 26vh;
+    
+
+}
+
+
+@keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+ 
+  
+  .img_modal > img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    animation: display 10s infinite;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  img:nth-child(4) {
+    animation-delay: 6s;
+  }
+  img:nth-child(5) {
+    animation-delay: 8s;
+  }
+
+.container_modal{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.outils_modal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, max-content)); /* Colonnes flexibles */
+    align-items: center; /* Centre les éléments verticalement */
+    gap: 10px; /* Espacement entre les éléments */
+}
+
+.outils_modal > img,
+.outils_modal > p {
+    /* Ajoute ici tes styles pour les images et le texte si nécessaire */
+}
+
+.outils_modal > img {
+    width: 40px; /* Définis la largeur des images */
+}
+
+.outils_modal > h2 {
+    grid-column: 1 / span 4; /* Étend le titre sur quatre colonnes */
+    margin: 0; /* Supprime les marges par défaut du titre */
+    /* Ajoute ici tes styles pour le titre */
+}
+/* Section Projet */
+
+.section-projet {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    margin-left: 60px;
+    margin-right: 60px;  
+}
+
+.preview {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    pointer-events: none;
+    transform-origin: center;
+    transform: scale(0); 
+    z-index: 2;
+}
+
+.preview-img {
+    width: 100%;
+    height: 100%;
+    background: url(./media/images/1.jpg);
+    background-size: cover;
+    background-position: 0 0;
+    pointer-events: none;
+
+}
+
+
+.text_project{
+    font-size: 1.2rem;
+    line-height: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.text_project_1{
+    font-size: 1.8rem;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    width: 100%;
+    padding: 2.5em 1em;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--main-bg-color);
+    cursor: pointer;
+}
+
+.project > div {
+    flex:3;
+}
+
+.project div:last-child {
+    flex: 1;
+}
+
+
+@media (max-width: 900px){
+    .location,.service{
+        display: none;
+    }
+}
+
+.project:hover .year img {
+    transform: rotateZ(90deg);   
+    transition: transform 0.7s; 
+}
+
+
+
+
+/* ---------------- */
+
+/* Section à propos */
+
+.section-apropos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+.section-apropos_container {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.section-apropos_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-apropos_txt > p {
+    line-height: 1.8rem;
+}
+
+
+.section-apropos_info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.section-apropos_links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+
+}
+
+.section-apropos_links a {
+    text-decoration: none;
+    position: relative;
+    color: var(--main-bg-color);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.8rem;
+
+}
+
+.section-apropos_links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.section-apropos_links a:hover::after {
+    background-color: var(--main-bg-color);
+}
+
+
+
+/* -------------- */
+
+/* section Passions */
+.section-passion {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+.section-passion_container {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-passion_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 20px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* ----------------- */
+
+/* Section Contact */
+.section-contact {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+.section-contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-contact-mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.section-contact-mail>h1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 100;
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-contact-mail>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    text-decoration: none;
+    color: var(--main-bg-color);
+    font-family: 'Red Hat Display', sans-serif;
+    width: fit-content;
+}
+
+
+.section-contact-links>a {
+    text-decoration: none;
+    position: relative;
+    color: var(--main-bg-color);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.8rem;
+    margin: auto 20px;
+}
+
+
+.section-contact-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.section-contact-links a:hover::after {
+    background-color: var(--main-bg-color);
+}
+
+/* Footer  */
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+/* -------- */
+
