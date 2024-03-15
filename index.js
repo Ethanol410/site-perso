@@ -24,6 +24,7 @@ const toggleSwitch = document.querySelector('.toggle_switch input[type="checkbox
 
 toggleSwitch.addEventListener('click', () => {
     const body = document.body;
+    const arrow = document.getElementById('year');
 
     if (body.classList.contains('light')) {
 
@@ -31,6 +32,7 @@ toggleSwitch.addEventListener('click', () => {
         body.classList.add('dark');
         document.documentElement.style.setProperty('--main-bg-color', 'black')
         document.documentElement.style.setProperty('--second-color', 'white')
+        arrow.src = './style/assets/ui/Arrow_high_white.png'
         console.log("Hello");
 
     } else if (body.classList.contains('dark')) {
@@ -362,3 +364,21 @@ function scrollToTop(){
 }
 
 /* ------ */
+
+
+/* Scrol reveal  */
+
+ScrollReveal({ 
+    reset: true,
+    distance:'50px',
+    duration:'2000',
+    delay: 30
+ });
+
+ ScrollReveal().reveal('.section-passion_container, .logo_ec' , { origin:'top' });
+ ScrollReveal().reveal('.section_titre, .section-apropos_links, .section-contact-links', { origin:'bottom' });
+ ScrollReveal().reveal('.photo-accueil, .section-apropos_img, .section-contact-mail, .logo', { origin:'left' });
+ ScrollReveal().reveal('.bio-accueil, .section-apropos_info, footer, .nav-links', { origin:'right' });
+ ScrollReveal().reveal('', { origin:'bottom' });
+
+/* --------- */
