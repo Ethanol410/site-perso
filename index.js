@@ -1,4 +1,4 @@
-/* function themeNuitJour() {
+function themeNuitJour() {
 console.log("Hello");
     
 const date = new Date()
@@ -16,7 +16,7 @@ if (hour < 5 || hour < 20) {
 }
 }
 
-themeNuitJour()  */
+themeNuitJour()  
 
 
 /* Bouton Mode Nuit  */
@@ -191,7 +191,6 @@ function updateModalContent(projectId) {
             <img src="./media/images/Boutique_4.jpg" alt="" class="pic" width="300px" height="400px">
             <img src="./media/images/photo_passions2.jpg" alt="" class="pic" width="300px" height="400px">
 
-            <!-- Ajoute d'autres images si nécessaire -->
         `;
         modalObjectif.textContent = "Ouvrir ma propre boutique en ligne de vêtements/Sneakers exclusives sur Instagram";
         modalRole.textContent = "Créateur";
@@ -209,14 +208,13 @@ function updateModalContent(projectId) {
             <img src="./style/assets/ui/icons8-application-canva-96.png" alt="Logo Canva">
             <p>Canva</p>
             
-            <!-- Ajoute d'autres outils si nécessaire -->
         `;
     } else if (projectId === "p2") {
         modalTitle.textContent = "Fabrik Ta Pépite";
         modalSubtitle.textContent = "Gestion de projet";
         modalDate.textContent = "2023";
-        modalLink.textContent = "GitHub";
-        modalLink.href = "lien-vers-github-p2";
+        modalLink.textContent = "Linkedin";
+        modalLink.href = "https://www.linkedin.com/posts/benech_fabriktapaezpite-prix-prix-activity-7173606746517585920-YdoD?utm_source=share&utm_medium=member_desktop";
         modalLink.target = "_blank";
 
         modalImages.innerHTML = `
@@ -247,6 +245,7 @@ function updateModalContent(projectId) {
         modalTitle.textContent = "Application Web ";
         modalSubtitle.textContent = "Développement web";
         modalDate.textContent = "2023";
+        modalLink.textContent = "GitHub";
         modalLink.href = "https://github.com/Ethanol410/Application_web_Pokemon";
         modalLink.target = "_blank";
 
