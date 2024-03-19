@@ -22,9 +22,12 @@ themeNuitJour()  */
 /* Bouton Mode Nuit  */
 const toggleSwitch = document.querySelector('.toggle_switch input[type="checkbox"]');
 
+
+
 toggleSwitch.addEventListener('click', () => {
     const body = document.body;
     const arrow = document.getElementById('year');
+
 
     if (body.classList.contains('light')) {
 
