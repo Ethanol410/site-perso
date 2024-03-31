@@ -1,4 +1,4 @@
-function themeNuitJour() {
+/* function themeNuitJour() {
 console.log("Hello");
     
 const date = new Date()
@@ -16,7 +16,7 @@ if (hour < 5 || hour < 20) {
 }
 }
 
-themeNuitJour()  
+themeNuitJour()   */
 
 
 /* Bouton Mode Nuit  */
