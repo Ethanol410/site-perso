@@ -216,6 +216,9 @@ function updateModalContent(projectId) {
         modalLink.textContent = "Linkedin";
         modalLink.href = "https://www.linkedin.com/posts/benech_fabriktapaezpite-prix-prix-activity-7173606746517585920-YdoD?utm_source=share&utm_medium=member_desktop";
         modalLink.target = "_blank";
+       /*  modalLink.textContent = "Iut Lannion";
+        modalLink.href = "https://iut-lannion.univ-rennes.fr/laureats-la-finale-regionale-fabrik-ta-pepite"
+        modalLink.target = "_blank" */
 
         modalImages.innerHTML = `
             <img src="./media/images/8.png" alt="" class="pic" width="800px" height="400px">
