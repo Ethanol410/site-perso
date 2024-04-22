@@ -376,11 +376,12 @@ function scrollToTop(){
 
 /* Scrol reveal  */
 
-/*  ScrollReveal({ 
+ ScrollReveal({ 
     reset: true,
     distance:'50px',
     duration:'2000',
-    delay: 30
+    delay: 30,
+    mobile: false
  });
 
  ScrollReveal().reveal('.section-passion_container, .logo_ec' , { origin:'top' },{ mobile: false });
@@ -388,5 +389,5 @@ function scrollToTop(){
  ScrollReveal().reveal('.photo-accueil, .section-apropos_img, .section-contact-mail, .logo', { origin:'left' },{ mobile: false });
  ScrollReveal().reveal('.bio-accueil, .section-apropos_info, footer, .nav-links', { origin:'right' } ,{ mobile: false });
  ScrollReveal().reveal('', { origin:'bottom' },{ mobile: false });
- */
+
 /* --------- */

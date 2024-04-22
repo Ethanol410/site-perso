@@ -78,7 +78,7 @@ header {
 
 
   @media screen and (max-width: 700px){
-    .navbar  .nav-links li{
+    .navbar  .nav-links {
       display: none;
   }
 
