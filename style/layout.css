@@ -281,7 +281,9 @@ gap: 5px;
     }
 
     .arrow_back {
-        padding: 15px;
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-bottom: 5px;
     }
 
     .arrow_back img {
@@ -291,15 +293,18 @@ gap: 5px;
     }
 
     .titre_modal h1{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .titre_modal h3{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .titre_modal p{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
+    .link_modal{
+        gap: 0px;
+    }
     .link_modal h3{
         font-size: 1rem;
     }
