@@ -77,9 +77,12 @@ header {
   }
 
 
+  @media screen and (max-width: 700px){
+    .navbar  .nav-links{
+      display: none;
+  }
 
-
-
+  }
 
 /* Section accueil */
 
@@ -99,10 +102,29 @@ header {
     align-items: flex-end;
 }
 
-@media (max-width: 900px){
-    body{
+@media screen and (max-width: 700px){
+    
+    .section_accueil_container {
         display: flex;
         flex-wrap: wrap;
+    }
+    .photo-accueil img{
+        height: 350px;
+        width: 250px;
+    }
+
+    .bio-accueil {
+        
+    }
+    .bio-accueil h1{
+        font-size: 3rem;
+    }
+    .bio-accueil h2{
+        display: none;
+    }
+
+    .bio-accueil h3{
+        font-size: 1.3rem;
     }
 }
 
@@ -410,7 +432,19 @@ gap: 5px;
     background-color: var(--main-bg-color);
 }
 
-
+@media screen and (max-width: 700px){
+    .section-apropos_container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section-apropos_img > img {
+        width: 80vw;
+        height: 60vh;
+    }
+    .section-apropos_links a{
+        font-size: 1.5rem;
+    }
+}
 
 /* -------------- */
 
@@ -432,7 +466,7 @@ gap: 5px;
     justify-content: center;
 }
 
-.section-passion_content {
+.section-passion_content_1 ,.section-passion_content_2  {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -440,6 +474,31 @@ gap: 5px;
     gap: 40px;
     font-size: 20px;
     font-family: 'Red Hat Display', sans-serif;
+}
+
+@media screen and (max-width: 700px){
+    
+    .section-passion_content_1 , .section-passion_content_2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section-passion_content_1{
+        order: 0;
+        
+    }
+    .section-passion_content_2{
+        order: -1;
+    }
+
+    .section-passion_content_1 video{
+        width: 80vw;
+        
+    }
+
+    .section-passion_content_2 img{
+        width: 80vw;
+        
+    }
 }
 
 /* ----------------- */
@@ -510,6 +569,23 @@ gap: 5px;
 
 .section-contact-links a:hover::after {
     background-color: var(--main-bg-color);
+}
+
+@media screen and (max-width: 700px) {
+    .section-contact-container{
+        width: 80vw;
+    }
+    .section-contact-mail{
+        width: 80vw;
+    }
+    .section-contact-mail a{
+        font-size: 1.5rem;
+        width: auto;
+    }
+
+    .section-contact-links a{
+        font-size: 1.4rem;
+    }
 }
 
 /* Footer  */

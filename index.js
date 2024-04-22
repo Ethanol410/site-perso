@@ -228,7 +228,7 @@ function updateModalContent(projectId) {
             <img src="./media/images/14.png" alt="" class="pic" width="800px" height="400px">
 
         `;
-        modalObjectif.textContent = "L'objectif est de trouver une idée innovante, tester son potentiel, construire un business model, réaliser un prototype, Développer sa communication sur le terrain, se challenger devant un jury d'experts";
+        modalObjectif.textContent = "L'objectif est de trouver une idée innovante, tester son potentiel, construire un business model, réaliser un prototype, Développer sa communication sur le terrain, se challenger devant un jury d'experts. Avec mon équipe nous avons gagné le prix du Campus !";
         modalRole.textContent = "Concepteur, Designer";
         modalMissions.textContent = "Réaliser une charte graphique cohérente, coordonner les actions du projet";
         modalSkills.textContent = "Créativité, Esprit d'initiative, Pouvoir de conviction";
@@ -373,7 +373,7 @@ function scrollToTop(){
 
 /* Scrol reveal  */
 
-/* ScrollReveal({ 
+/*  ScrollReveal({ 
     reset: true,
     distance:'50px',
     duration:'2000',
