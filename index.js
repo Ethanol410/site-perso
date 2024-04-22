@@ -134,6 +134,7 @@ const arrow = document.querySelector('.arrow_back');
 
 arrow.onclick = function() {
     modalProjet.style.display = "none";
+    body.classList.remove('no-scroll')
   }
 
 
@@ -149,6 +150,8 @@ projectTriggers.forEach(project => {
     project.addEventListener('click', () => {
         // Affiche la modal correspondante
         modalProjet.style.display = "block";
+        
+        console.log("apagnan");
         
         // Met à jour le contenu de la modal avec les détails du projet
         updateModalContent(project.id);

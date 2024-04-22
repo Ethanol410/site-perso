@@ -78,7 +78,7 @@ header {
 
 
   @media screen and (max-width: 700px){
-    .navbar  .nav-links{
+    .navbar  .nav-links li{
       display: none;
   }
 
@@ -273,6 +273,70 @@ gap: 5px;
     margin: 0; /* Supprime les marges par défaut du titre */
     /* Ajoute ici tes styles pour le titre */
 }
+
+@media screen and (max-width: 700px){
+    .contain_modal{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .arrow_back {
+        padding: 15px;
+    }
+
+    .arrow_back img {
+        width: 7vw;
+        height: 2vh;
+        
+    }
+
+    .titre_modal h1{
+        font-size: 1.3rem;
+    }
+    .titre_modal h3{
+        font-size: 1rem;
+    }
+    .titre_modal p{
+        font-size: 0.8rem;
+    }
+
+    .link_modal h3{
+        font-size: 1rem;
+    }
+    .link_modal a{
+        font-size: 0.8rem;
+    }
+
+    .img_modal{
+       height: 80px;
+    }
+    .img_modal img{
+        width: 80vw;
+        height: 30vh;
+    }
+    .container_modal{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .container_modal h2{
+        font-size: 1.2rem;
+    }
+    .container_modal p{
+        font-size: 0.9rem;
+    }
+    .outils_modal p{
+        font-size: 0.8rem;
+    }
+    .outils_modal img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* ------------------------- */
+
+
 /* Section Projet */
 
 .section-projet {
