@@ -381,7 +381,7 @@ function scrollToTop(){
     distance:'50px',
     duration:'2000',
     delay: 30,
-    mobile: false
+    mobile: false,
  });
 
  ScrollReveal().reveal('.section-passion_container, .logo_ec' , { origin:'top' },{ mobile: false });

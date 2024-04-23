@@ -34,6 +34,7 @@
 body {
     background-color: var(--second-color);
     color: var(--main-bg-color);
+    overflow-x: hidden;
 }
 
 

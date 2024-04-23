@@ -35,19 +35,24 @@ header {
 
     padding: 30px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
 }
 
 .navbar .nav-links ul {
-    display: flex;
-    align-items: center;
+   display: flex;
 
 }
 
 .navbar .nav-links ul li {
     margin: 0 30px;
+}
+
+.logo_ec{
+    display: flex;
+    justify-content: center;
+
 }
 
 
