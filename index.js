@@ -171,7 +171,7 @@ function updateModalContent(projectId) {
     const modalSkills = document.querySelector('.skills_modal p');
     const modalOutils = document.querySelector('.outils_modal');
 
-    // Exemple de contenu à remplacer
+    /* Exemple de contenu à remplacer */
     modalTitle.textContent = "Titre du projet";
     modalSubtitle.textContent = "Sous-titre du projet";
     modalDate.textContent = "Date du projet";
@@ -392,10 +392,7 @@ ScrollReveal({
  
 /* --------- */
 
-/* preo loader */
-
-
-// Use this Js Code for preloading effect
+/* pre loader */
 
 document.addEventListener("DOMContentLoaded", () => {
   const preloader = document.querySelector("#preloader");
