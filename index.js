@@ -376,7 +376,7 @@ function scrollToTop(){
 
 /* Scrol reveal  */
 
- ScrollReveal({ 
+ScrollReveal({ 
     reset: true,
     distance:'50px',
     duration:'2000',
@@ -389,5 +389,23 @@ function scrollToTop(){
  ScrollReveal().reveal('.photo-accueil, .section-apropos_img, .section-contact-mail, .logo', { origin:'left' },{ mobile: false });
  ScrollReveal().reveal('.bio-accueil, .section-apropos_info, footer, .nav-links', { origin:'right' } ,{ mobile: false });
  ScrollReveal().reveal('', { origin:'bottom' },{ mobile: false });
-
+ 
 /* --------- */
+
+/* preo loader */
+
+
+// Use this Js Code for preloading effect
+
+document.addEventListener("DOMContentLoaded", () => {
+  const preloader = document.querySelector("#preloader");
+  window.addEventListener("load", () => {
+    preloader.classList.add("preloaded");
+    setTimeout(() => {
+      preloader.remove();
+    }, 1800);
+  });
+});
+
+
+/* ---------------- */
