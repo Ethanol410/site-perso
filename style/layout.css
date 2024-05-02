@@ -660,6 +660,9 @@ gap: 5px;
     .section-contact-links a{
         font-size: 1.4rem;
     }
+    .scrollTop{
+        display: none;
+    }
 }
 
 /* Footer  */
